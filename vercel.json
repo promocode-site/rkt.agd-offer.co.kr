@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/how-to-use.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-use",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
