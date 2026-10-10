@@ -147,6 +147,14 @@ body{margin:0;background:#ECEEE4;color:#1E2721;font-family:-apple-system,BlinkMa
 .rx-foot ul{list-style:none;display:grid;gap:6px}
 .rx-foot a{color:#FAF7EF;font-size:14px;text-decoration:underline;text-decoration-color:rgba(250,247,239,.35);text-underline-offset:3px}
 .rx-foot a:hover,.rx-foot a:focus-visible{text-decoration-color:#E3A21A}
+.rx-pages{margin-bottom:22px}
+.rx-pages ul{list-style:none;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.rx-pages ul::-webkit-scrollbar{display:none}
+.rx-pages a{display:block;white-space:nowrap;font-size:14px;font-weight:700;color:#1E2721;background:#FAF7EF;border:2px solid #1E2721;padding:6px 12px;text-decoration:none}
+.rx-pages a:hover,.rx-pages a:focus-visible{background:#E3A21A;color:#1E2721}
+.rx-pages a[aria-current="page"]{background:#1E2721;color:#FAF7EF}
+.rx-foot-more{margin-top:28px}
+.rx-foot-more ul{display:flex;flex-wrap:wrap;gap:6px 18px}
 .rx-foot-bottom{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:28px;padding-top:16px;border-top:1px solid rgba(250,247,239,.3);font-size:13px}
 @media (max-width:760px){
 .rx-top{padding:32px 16px 22px}
@@ -166,6 +174,12 @@ body{margin:0;background:#ECEEE4;color:#1E2721;font-family:-apple-system,BlinkMa
 <body>
 <div class="rx" id="top">
 <header class="rx-top">
+  <nav class="rx-inner rx-pages" aria-label="페이지 메뉴">
+    <ul>
+      <li><a href="./" aria-current="page">홈</a></li>
+      <li><a href="discount-coupon/">라쿠텐트래블 할인쿠폰</a></li>
+    </ul>
+  </nav>
   <div class="rx-inner rx-top-grid">
     <div>
       <h1>라쿠텐 트래블 할인코드</h1>
@@ -1504,7 +1518,7 @@ body{margin:0;background:#ECEEE4;color:#1E2721;font-family:-apple-system,BlinkMa
 .upd-log-list li{display:flex;gap:14px;align-items:baseline;padding:11px 0;border-top:1px solid rgba(var(--upd-rgb),.14)}
 .upd-log-list li:first-child{border-top:0}
 .upd-log-list time{flex:0 0 auto;font:800 12.5px/1.6 ui-monospace,Menlo,Consolas,monospace;color:var(--upd-c)}
-.upd-log-list p{font-size:14px;line-height:1.6}
+.upd-log-list p{font-size:14px;line-height:1.6;min-width:0;overflow-wrap:anywhere}
 @media (max-width:640px){.upd-log-title{font-size:19px}.upd-log-list li{flex-direction:column;gap:2px}}
 </style>
 </main>
@@ -1533,6 +1547,20 @@ body{margin:0;background:#ECEEE4;color:#1E2721;font-family:-apple-system,BlinkMa
         </ul>
       </div>
     </div>
+    <!--@FOOTER-LINKS-->
+    <div class="rx-foot-more">
+      <p class="rx-foot-title">다른 할인코드</p>
+      <ul>
+        <li><a href="tripcom/">트립닷컴 할인코드</a></li>
+        <li><a href="klook/">클룩 할인코드</a></li>
+        <li><a href="agoda/">아고다 할인코드</a></li>
+        <li><a href="myrealtrip/">마이리얼트립 할인코드</a></li>
+        <li><a href="hotelscom/">호텔스닷컴 할인코드</a></li>
+        <li><a href="kkday/">kkday 할인코드</a></li>
+        <li><a href="usimsa/">유심사 할인코드</a></li>
+      </ul>
+    </div>
+    <!--@/FOOTER-LINKS-->
     <div class="rx-foot-bottom">
       <p>© 2026 라쿠텐 트래블 할인코드 · rkt.agd-offer.co.kr</p>
       <a href="#top">맨 위로</a>
